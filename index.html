@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MK Management Consultancy LLP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2e7d32;   /* Dark Green */
+      --secondary: #fdd835; /* Yellow */
+      --light: #f6fff5;     /* Very Light Green Background */
+      --dark: #1a1a1a;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--light);
+    }
+
+    /* Navbar */
+    .navbar {
+      background: var(--primary);
+    }
+    .navbar-brand, .nav-link {
+      color: #ffffff !important;
+      font-weight: 500;
+    }
+    .navbar-brand img {
+      height: 45px;
+      margin-right: 8px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(120deg, var(--primary), #4caf50);
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .btn-yellow {
+      background: var(--secondary);
+      color: var(--dark);
+      font-weight: 600;
+      border: none;
+    }
+    .btn-yellow:hover {
+      background: #fbc02d;
+      color: var(--dark);
+    }
+
+    /* Sections */
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 30px;
+      color: var(--primary);
+    }
+    .service-card {
+      background: #ffffff;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      border-radius: 10px;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+    }
+
+    /* Contact */
+    .contact-info i {
+      color: var(--primary);
+      margin-right: 10px;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="logo.png" alt="MK Logo"> <!-- Replace logo.png with your actual logo -->
+      <span>MK Management LLP</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="container">
+    <h1>Expert Payroll & Compliance Solutions</h1>
+    <p class="lead mt-3">Managing Payroll, ESIC, EPF & Labour Law Compliance efficiently for your business.</p>
+    <a href="#contact" class="btn btn-yellow mt-4 btn-lg">Get In Touch</a>
+  </div>
+</section>
+
+<!-- About -->
+<section class="py-5" id="about">
+  <div class="container text-center">
+    <h2 class="section-title">About Us</h2>
+    <p class="lead mx-auto" style="max-width: 700px;">
+      MK Management Consultancy LLP is a trusted partner in payroll & statutory compliance services. 
+      We help businesses stay legally compliant while focusing on growth. Our expert team ensures accurate, timely, and hassle-free solutions.
+    </p>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="py-5 bg-light" id="services">
+  <div class="container">
+    <h2 class="section-title text-center">Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="card service-card p-4 text-center">
+          <i class="bi bi-cash-stack display-4 mb-3 text-success"></i>
+          <h5>Payroll Management</h5>
+          <p>Accurate salary processing, payslips & tax compliance.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card service-card p-4 text-center">
+          <i class="bi bi-person-lines-fill display-4 mb-3 text-success"></i>
+          <h5>EPF Compliance</h5>
+          <p>End-to-end PF registration, return filing & support.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card service-card p-4 text-center">
+          <i class="bi bi-heart-pulse display-4 mb-3 text-success"></i>
+          <h5>ESIC Services</h5>
+          <p>Employee State Insurance registration & management.</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card service-card p-4 text-center">
+          <i class="bi bi-briefcase-fill display-4 mb-3 text-success"></i>
+          <h5>Labour Law Compliance</h5>
+          <p>Expert guidance to stay compliant with all regulations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="py-5" id="contact">
+  <div class="container text-center">
+    <h2 class="section-title">Contact Us</h2>
+    <p class="lead">Let us simplify compliance for your business.</p>
+    <div class="row justify-content-center mt-4">
+      <div class="col-md-6 text-start contact-info">
+        <p><i class="bi bi-geo-alt-fill"></i> CS No 10987 Flat no T1 Royal Ganesha Appt Kolhapur Road Sangli</p>
+        <p><i class="bi bi-envelope-fill"></i> mkoffice@gmail.com</p>
+        <p><i class="bi bi-telephone-fill"></i> +91 8793402888</p>
+      </div>
+    </div>
+    <a href="mailto:info@mkmconsultancy.in" class="btn btn-yellow mt-3">Send Email</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p class="mb-0">© 2025 MK Management Consultancy LLP | All Rights Reserved</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
